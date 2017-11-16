@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<form method="GET" action="dump.php">
+		<input type="text" name="utilizador"/>
+		<input type="password" name="pass"/>
+		<fieldset>
+		<input type="radio" name="genero" value="M" checked="checked"> Masculino
+		<input type="radio" name="genero" value="F"> Feminino
+		<input type="radio" name="genero" value="X"> Outro
+		</fieldset>
+		<fieldset>
+		<input type="checkbox" name="hobby[]" value="h01"> Cinema
+		<input type="checkbox" name="hobby[]" value="h02"> Futebol
+		<input type="checkbox" name="hobby[]" checked="checked" value="h03"> Praia
+		<input type="checkbox" name="hobby[]" value="h04"> Dormir
+		<input type="checkbox" name="hobby[]" value="h05"> Dançar
+		</fieldset>
+		<select multiple="multiple" name="distrito[]">
+			<option value="viana"> Viana do Castelo</option>
+			<option value="braga" selected="selected"> Braga</option>
+			<option value="porto"> Porto</option>
+			<option value="outro"> Outro</option>
+		</select>
+
+		<input type="submit" value="Enviar Formulário">
+		<input type="reset"  value="Limpar">
+	</form>
+
+</body>
+</html>
